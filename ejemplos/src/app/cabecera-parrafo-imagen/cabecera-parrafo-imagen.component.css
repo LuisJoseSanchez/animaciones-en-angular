@@ -1,0 +1,21 @@
+.menu {
+  background-color: darkorange;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+}
+
+li:hover {
+  cursor: pointer;
+}
