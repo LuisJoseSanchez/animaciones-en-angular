@@ -6,8 +6,13 @@ Para ver la presentación, haz clic <a target="_blank"  href="https://rawgit.com
 
 ## Ejemplos
 
-Para probar los ejemplos sigue los siguientes pasos.
+Para probar los ejemplos sigue los siguientes pasos:
 
 ```console
-git clone sdgdfg
+git clone https://github.com/LuisJoseSanchez/animaciones-en-angular.git
+cd animaciones-en-angular/ejemplos
+npm install
+ng serve
 ```
+Abre el navegador en <http://localhost:4200/>
+
