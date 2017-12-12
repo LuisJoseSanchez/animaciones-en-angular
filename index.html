@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Angular Málaga</title>
+    
+      <meta name="description" content="Presentación del taller de iniciación a Angular.">
+      <meta name="author" content="Luis José Sánchez">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/gris.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Font Awesome (no está incluido en RevealJS) -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+      <!--
+        <section data-markdown="presentacion.md"  
+          data-separator-vertical="^\r?\n===\r?\n$">
+        </section>
+      -->
+
+        <section>
+          <img src="img/angularmalaga.png">
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Iniciación a Angular
+
+            <img src="img/angularlogo.png">
+            
+            Luis José Sánchez
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ### <i class="fa fa-television" aria-hidden="true"></i> Presentación
+            ### https://goo.gl/FrzsT9
+            
+            <br>
+
+            ### <i class="fa fa-code" aria-hidden="true"></i> Ejemplos
+            ### https://goo.gl/xbvbWf
+          </textarea>
+        </section>
+
+        <section data-markdown data-transition="fade-out">
+          <textarea data-template>
+            ## Angular
+            (versiones 2, 4...)
+            ### [angular.io](https://angular.io/)
+            <br><br>            
+            ## AngularJS 1.X
+            ### [angularjs.org](https://angularjs.org/)
+          </textarea>
+        </section>
+
+        <section data-markdown data-transition="fade-in">
+            <textarea data-template>
+              ## Angular
+              (versiones 2, 4...)
+              ### [angular.io](https://angular.io/)
+              <br><br>            
+              ## <strike>AngularJS 1.X</strike>
+              ### <strike>[angularjs.org](https://angularjs.org/)</strike>
+            </textarea>
+          </section>
+
+        <section data-background="img/spaghetti.jpg">
+        </section>
+
+        <section data-background="img/lasagna.jpg">
+        </section>
+
+        <section data-background="img/ravioli.jpg">
+        </section>
+
+        <section data-markdown>
+            <textarea data-template>
+              ## ¿Qué es Angular?
+  
+              * Plataforma para Front-End
+              * Creado por Google
+              * Ideal para SPA
+              * Basado en componentes
+              * Usa Typescript
+            </textarea>
+          </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Angular CLI
+
+            ```console
+            ng new mi-proyecto
+            cd mi-proyecto
+            ng serve
+            ```
+
+            ```console
+            ng g component mi-componente
+            ```
+          </textarea>
+        </section>
+
+        <section data-markdown>
+            <textarea data-template>
+              ## ¡MANOS A LA OBRA!
+  
+              ### https://goo.gl/xbvbWf
+            </textarea>
+        </section>
+        
+        <section data-markdown>
+          <textarea data-template>
+              ### Créditos de las imágenes
+  
+              * Spaghetti: Security, [Pixabay](https://pixabay.com)
+              * Lasaña: WerbeFabrik, [Pixabay](https://pixabay.com)
+              * Ravioli: cyclonebill, [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page)
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            <img class="circulo" src="img/luisjose.png" width="200">
+            
+            Luis José Sánchez
+            
+            <i class="fa fa-github" aria-hidden="true"></i> [github.com/LuisJoseSanchez](https://github.com/LuisJoseSanchez)
+
+            <i class="fa fa-linkedin" aria-hidden="true"></i> [linkedin.com/in/luis-josé-sánchez-034b0886](https://www.linkedin.com/in/luis-josé-sánchez-034b0886/)
+
+            <i class="fa fa-twitter" aria-hidden="true"></i> [@luisjoseprofe](https://twitter.com/luisjoseprofe)
+
+            <i class="fa fa-globe" aria-hidden="true"></i> [luisjose.org](http://luisjose.org/)
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            # ¡Gracias!
+          </textarea>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

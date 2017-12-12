@@ -1,0 +1,65 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+// @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #666666;
+$headingColor: #666666;
+
+$mainFontSize: 42px;
+// $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Open Sans', Arial, sans-serif;
+// $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Open Sans', Arial, sans-serif;
+$headingTextShadow: 2px 2px 2px rgba(0, 0, 0, .2);
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.subtitle {
+	color: white;
+	text-shadow: 2px 2px 4px black,
+							 0px 0px 10px black;
+}
+
+img {
+	border: 0px;
+}
+
+.circulo {
+	border-radius: 50%;
+}
