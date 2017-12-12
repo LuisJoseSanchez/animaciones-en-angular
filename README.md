@@ -14,5 +14,8 @@ cd animaciones-en-angular/ejemplos
 npm install
 ng serve
 ```
-Abre el navegador en <http://localhost:4200/>
+
+Por último, abre tu navegador favorito en <http://localhost:4200/>
+
+:star: Si te ha gustado este repositorio, dale una estrella.
 
