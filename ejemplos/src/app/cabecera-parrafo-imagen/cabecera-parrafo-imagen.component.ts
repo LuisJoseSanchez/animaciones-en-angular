@@ -7,19 +7,41 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   styleUrls: ['./cabecera-parrafo-imagen.component.css'],
   animations: [
     trigger('animacion',[
-      state('chico', style({ transform: 'scale(0.1)'})),
-      state('grande', style({ transform: 'scale(2)'})),
-      state('fundido', style({ transform: 'opacity(0)'})),
-      transition('chico <=> grande', animate('1000ms')),
-      transition('* => fundido', animate('2500ms'))
+      state('chico', style({ transform: 'scale(0.2)'})),
+      state('rotado', style({ transform: 'rotate(200deg)'})),
+      state('fundido', style({ opacity: 0 })),
+      transition('* => *', animate('1400ms')),
     ])
   ]
 })
 export class CabeceraParrafoImagenComponent implements OnInit {
+
+  objetoSeleccionado: string = 'cabecera';
+
+  estado = {
+    cabecera: 'original',
+    imagen: 'original',
+    parrafo:  'original'
+  };
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  seleccionaElemento(elemento: string) {
+    this.objetoSeleccionado = elemento;
+  }
+
+  anima(estadoFinal: string) {
+    this.estado[this.objetoSeleccionado] = estadoFinal;
+  }
+
+  reinicia() {
+    this.estado = {
+      cabecera: 'original',
+      imagen: 'original',
+      parrafo:  'original'
+    };
+  }
 }

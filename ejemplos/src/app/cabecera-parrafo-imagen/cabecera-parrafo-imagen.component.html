@@ -1,26 +1,45 @@
 <div class="menu">
   <ul>
-    <li (click)="seleccionaElemento('cabecera')">Cabecera</li>
-    <li (click)="seleccionaElemento('imagen')">Imagen</li>
-    <li (click)="seleccionaElemento('parrafo')">Parrafo</li>
-    <li>Tamaño</li>
-    <li>Rotación</li>
+    <li
+      [ngClass]="{'seleccionado': objetoSeleccionado === 'cabecera'}"
+      (click)="seleccionaElemento('cabecera')">
+      Cabecera
+    </li>
+    <li
+      [ngClass]="{'seleccionado': objetoSeleccionado === 'imagen'}"
+      (click)="seleccionaElemento('imagen')">
+      Imagen
+    </li>
+    <li
+      [ngClass]="{'seleccionado': objetoSeleccionado === 'parrafo'}"
+      (click)="seleccionaElemento('parrafo')">
+      Parrafo
+    </li>
+    <li>&#9899;</li>
+    <li (click)="anima('chico')">Tamaño</li>
+    <li (click)="anima('rotado')">Rotación</li>
+    <li (click)="anima('fundido')">Fundido</li>
+    <li>&#9899;</li>
+    <li (click)="reinicia()">Reiniciar</li>
   </ul>
 </div>
 
-<h1 [@animacion]='estadoCabecera'>Lorem fistrum angularrrr</h1>
+<div class="contenido">
+  <h1 [@animacion]='estado.cabecera'>Animaciones con Angular</h1>
+  
+  <img [@animacion]='estado.imagen' src="assets/cat.jpg" alt="">
+  
+  <p [@animacion]='estado.parrafo'>
+    Lorem fistrum te voy a borrar el cerito al ataquerl a gramenawer al ataquerl
+    me cago en tus muelas. Me cago en tus muelas hasta luego Lucas llevame al
+    sircoo a wan la caidita. Ese hombree benemeritaar no puedor caballo blanco
+    caballo negroorl jarl quietooor mamaar al ataquerl te voy a borrar el cerito.
+    Está la cosa muy malar quietooor pupita al ataquerl ese hombree. Jarl benemeritaar
+    llevame al sircoo va usté muy cargadoo te va a hasé pupitaa de la pradera está la
+    cosa muy malar torpedo. Apetecan diodeno ese pedazo de ahorarr benemeritaar ese
+    pedazo de a gramenawer caballo blanco caballo negroorl papaar papaar quietooor.
+    La caidita a wan fistro me cago en tus muelas diodeno. Papaar papaar de la pradera
+    llevame al sircoo a peich diodeno pecador.
+  </p>
+</div>
 
-<img src="assets/cat.jpg" alt="">
-
-<p [@animacion]='estadoParrafo'>
-  Lorem fistrum te voy a borrar el cerito al ataquerl a gramenawer al ataquerl
-  me cago en tus muelas. Me cago en tus muelas hasta luego Lucas llevame al
-  sircoo a wan la caidita. Ese hombree benemeritaar no puedor caballo blanco
-  caballo negroorl jarl quietooor mamaar al ataquerl te voy a borrar el cerito.
-  Está la cosa muy malar quietooor pupita al ataquerl ese hombree. Jarl benemeritaar
-  llevame al sircoo va usté muy cargadoo te va a hasé pupitaa de la pradera está la
-  cosa muy malar torpedo. Apetecan diodeno ese pedazo de ahorarr benemeritaar ese
-  pedazo de a gramenawer caballo blanco caballo negroorl papaar papaar quietooor.
-  La caidita a wan fistro me cago en tus muelas diodeno. Papaar papaar de la pradera
-  llevame al sircoo a peich diodeno pecador.
-</p>
