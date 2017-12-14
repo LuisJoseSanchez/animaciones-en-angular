@@ -17,5 +17,5 @@ ng serve
 
 Por último, abre tu navegador favorito en <http://localhost:4200/>
 
-:star: Si te ha gustado este repositorio, dale una estrella.
+:star: Si te ha gustado este repositorio, dale una estrella :wink:
 
