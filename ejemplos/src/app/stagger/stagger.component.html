@@ -1,3 +1,15 @@
-<p>
-  stagger works!
-</p>
+<div class="pagina">
+  <div
+    class="cercania-menu"
+    (mouseover)="activaMenu()"
+    (mouseleave)="desactivaMenu()">
+    <div class="contenedor-menu">
+      <div [@animacionDeBotones]="estadoMenu">
+        <div *ngFor="let boton of botones">
+          <button>{{ boton }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
