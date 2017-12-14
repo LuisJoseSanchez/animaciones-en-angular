@@ -10,7 +10,7 @@ Para probar los ejemplos sigue los siguientes pasos:
 
 ```console
 git clone https://github.com/LuisJoseSanchez/animaciones-en-angular.git
-cd animaciones-en-angular/ejemplos
+cd animaciones-en-angular/ejemplos_con_rutas
 npm install
 ng serve
 ```
