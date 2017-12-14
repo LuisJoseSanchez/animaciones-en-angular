@@ -8,7 +8,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('animacion',[
       state('chico', style({ transform: 'scale(0.2)'})),
-      state('rotado', style({ transform: 'rotate(200deg)'})),
+      state('rotado', style({ transform: 'rotate(400deg)'})),
       state('fundido', style({ opacity: 0 })),
       transition('* => *', animate('1400ms')),
     ])
