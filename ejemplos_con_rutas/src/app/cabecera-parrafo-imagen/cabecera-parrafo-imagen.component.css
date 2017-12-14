@@ -1,0 +1,39 @@
+.menu {
+  background-color: darkorange;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  width: 80%;
+  text-align: justify;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: red;
+  transition: 1000ms;
+}
+
+.seleccionado {
+  background-color: orange;
+  transition: 600ms;
+}

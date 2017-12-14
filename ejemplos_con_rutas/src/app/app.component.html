@@ -1,0 +1,26 @@
+<!--
+
+<app-parrafo-menguante></app-parrafo-menguante>
+
+<app-cabecera-parrafo-imagen></app-cabecera-parrafo-imagen>
+
+<app-keyframes></app-keyframes>
+
+<app-stagger></app-stagger>
+-->
+
+<div class="principal" [@routerTransition]="prepRouteState(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+<div>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a routerLink="/inicio">Inicio</a></li>
+      <li><a routerLink="/ejemplo1">Funcionamiento básico</a></li>
+      <li><a routerLink="/ejemplo2">Animación de varios elementos</a></li>
+      <li><a routerLink="/ejemplo3">Keyframes (animaciones por pasos)</a></li>
+      <li><a routerLink="/ejemplo4">Stagger (animaciones escalonadas)</a></li>
+    </ul>
+  </nav>      
+</footer>

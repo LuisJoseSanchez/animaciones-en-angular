@@ -1,0 +1,11 @@
+.contenido {
+  display: flex;
+  width: 100%;
+  padding: 100px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 100px;
+}

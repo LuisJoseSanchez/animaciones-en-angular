@@ -1,0 +1,12 @@
+<div class="menu">
+  <ul>
+    <li (click)="iniciaAnimacion()">Iniciar</li>
+    <li>&#9899;</li>
+    <li (click)="reiniciaAnimacion()">Reiniciar</li>
+  </ul>
+</div>
+
+<div class="contenido">
+  <img [@animacion]='estado' src="assets/colibri.jpg" alt="">
+</div>
+
